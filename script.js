@@ -9,7 +9,7 @@ window.clearDiv = (id) => {
 
 window.positiveOrNegative = () => {
     let num = document.getElementById("ex-1").value;
-    if (num === "") {
+    if (num.trim() === "") {
         alert("Por favor digite algo no ex-1");
         return;
     }
@@ -47,7 +47,7 @@ window.maioridade = () => {
 
 window.contagemProgressiva = async () => {
     let div = document.getElementById("contagemProgressiva");
-    div.innerHTML = "";   
+    clearDiv("contagemProgressiva");  
     for(let i = 1; i < 11; i++) {
         div.innerHTML += `<p>${i}</p>`;
         await sleep(500);
@@ -90,4 +90,76 @@ window.senhaCorreta = () => {
         senha = prompt("Digite sua senha");
     } while (senha != "1234")
     console.log(`Você acertou a senha em ${tentativas} tentativas`);
+}
+
+function soma(numero1, numero2) {
+    let div = document.getElementById("resultSoma");
+    let result = numero1 + numero2;
+    return div.innerHTML = `${numero1} + ${numero2} = ${result}`;
+}
+
+window.showSoma = () => {
+    let num1 = prompt("Digite o primeiro número");
+    if (num1 === null || num1.trim() === "") {
+        alert("O número não pode ser vazio");
+        return;
+    }
+
+    num1 = Number(num1);
+
+    let num2 = prompt("Digite o segundo número");
+    if (num2 === null || num2.trim() === "") {
+        alert("O número não pode ser vazio");
+        return;
+    }
+
+    num2 = Number(num2);
+
+    soma(num1, num2);
+}
+
+window.ehPar = () => {
+    let num = document.getElementById("ex-8").value;
+    let div = document.getElementById("resultPar");
+    div .innerHTML = "";
+    if (num.trim() === "") {
+        alert("O campo não pode ser vazio");
+        return;
+    }
+
+    if (num % 2 === 0) {
+        return div.innerHTML = `O número ${num} é par`;
+    }
+    return div.innerHTML = `O número ${num} é ímpar`;
+}
+
+function somaRecursiva(num){
+    if (num === 1) {
+        return num;
+    }
+    return num + somaRecursiva(num - 1);
+}
+
+window.somaAteNum = () => {
+    let num = document.getElementById("ex-9").value;
+    let div = document.getElementById("resultSomaAteNum");
+    div.innerHTML = "";
+    if (num.trim() === "") {
+        alert("O campo não pode ser vazio");
+        return;
+    }
+    let soma = somaRecursiva(Number(num));
+    div.innerHTML = `O resultado da soma é: ${soma}`;
+}
+
+window.primo = () => {
+    let num = document.getElementById("ex-10").value;
+    let div = document.getElementById("resultPrimo");
+    div.innerHTML = "";
+    for(let i = 2; i < num; i++) {
+        if(num % i === 0) {
+            return div.innerHTML = `O número ${num} não é primo`;
+        }
+    }
+    return div.innerHTML = `O número ${num} é primo`;
 }
