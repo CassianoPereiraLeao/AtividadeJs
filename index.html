@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades em javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Meu site para testar todos os comandos</h1>
+
+    <h2>1 - Resultado no console</h2>
+    <input type="number" id="ex-1" placeholder="Digite um número">
+    <button type="submit" onclick="positiveOrNegative()">Ex 1</button>
+
+    <h2>2 - Resultado no HTML</h2>
+    <input type="number" id="ex-2" placeholder="Digite um número">
+    <button type="submit" onclick="maioridade()">Ex-2</button>
+
+    <div id="resultIdade" class="results-row">
+        
+    </div>
+
+    <h2>3 - Resultado no HTML</h2>
+    <button onclick="contagemProgressiva()">Começar contagem</button>
+
+    <div id="contagemProgressiva" class="results-row">
+
+    </div>
+
+    <h2>4 - Resultado no HTML</h2>
+    <input type="number" id="ex-4" placeholder="Digite um número">
+    <button type="submit" onclick="tabuada()">Ex-4</button>
+    
+    <div id="resultTabuada" class="results-column">
+
+    </div>
+
+    <h2>5 - Resultado no HTML</h2>
+    <button onclick="contagemRegressiva()">Contagem Regressiva</button>
+
+    <div id="contagemRegressiva" class="results-row">
+
+    </div>
+
+    <h2>6 - Resultado no Console</h2>
+    <!-- Sei que deixar como type text é contra as boas praticas mas pela atividade vou deixar -->
+    <button onclick="senhaCorreta()">Tentar senha</button>
+    
+    <div id="resultSenha" class="results-row">
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

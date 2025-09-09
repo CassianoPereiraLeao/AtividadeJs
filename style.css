@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.results-row {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.results-column {
+    display: flex;
+    flex-direction: column;
+}
+
+button.clear {
+    width: 60px;
+}
