@@ -9,79 +9,98 @@
 <body>
     <h1>Meu site para testar todos os comandos</h1>
 
-    <h2>1 - Resultado no console</h2>
-    <input type="number" id="ex-1" placeholder="Digite um número">
-    <button type="submit" onclick="positiveOrNegative()">Enviar</button>
+    <section>
+        <h2>1 - Resultado no console</h2>
+        <input type="number" id="ex-1" placeholder="Digite um número">
+        <button type="submit" onclick="positiveOrNegative()">Enviar</button>
+    </section>
 
-    <h2>2 - Resultado no HTML</h2>
-    <input type="number" id="ex-2" placeholder="Digite um número">
-    <button type="submit" onclick="maioridade()">Enviar</button>
+    <section>
+        <h2>2 - Resultado no HTML</h2>
+        <input type="number" id="ex-2" placeholder="Digite um número">
+        <button type="submit" onclick="maioridade()">Enviar</button>
+    
+        <div id="resultIdade" class="results-row">
+            
+        </div>
+    </section>
 
-    <div id="resultIdade" class="results-row">
+    <section>
+        <h2>3 - Resultado no HTML</h2>
+        <button onclick="contagemProgressiva()">Começar contagem</button>
+    
+        <div id="contagemProgressiva" class="results-row">
+    
+        </div>
+    </section>
+
+    <section>
+        <h2>4 - Resultado no HTML</h2>
+        <input type="number" id="ex-4" placeholder="Digite um número">
+        <button type="submit" onclick="tabuada()">Enviar</button>
         
-    </div>
-
-    <h2>3 - Resultado no HTML</h2>
-    <button onclick="contagemProgressiva()">Começar contagem</button>
-
-    <div id="contagemProgressiva" class="results-row">
-
-    </div>
-
-    <h2>4 - Resultado no HTML</h2>
-    <input type="number" id="ex-4" placeholder="Digite um número">
-    <button type="submit" onclick="tabuada()">Enviar</button>
+        <div id="resultTabuada" class="results-column">
     
-    <div id="resultTabuada" class="results-column">
+        </div>
+    </section>
 
-    </div>
-
-    <h2>5 - Resultado no HTML</h2>
-    <!-- Não fica apertando mil veze pq to com preguiça de validar prof tudo -->
-    <button onclick="contagemRegressiva()">Contagem Regressiva</button>
-
-    <div id="contagemRegressiva" class="results-row">
-
-    </div>
-
-    <h2>6 - Resultado no Console</h2>
-    <!-- Sei que deixar como type text é contra as boas praticas mas pela atividade vou deixar -->
-    <button onclick="senhaCorreta()">Tentar senha</button>
+    <section>
+        <h2>5 - Resultado no HTML</h2>
+        <!-- Não fica apertando mil vezes pq to com preguiça de validar prof tudo -->
+        <button onclick="contagemRegressiva()">Contagem Regressiva</button>
     
-    <div id="resultSenha" class="results-row">
+        <div id="contagemRegressiva" class="results-row">
+    
+        </div>
+    </section>
 
-    </div>
+    <section>
+        <h2>6 - Resultado no Console</h2>
+        <button onclick="senhaCorreta()">Tentar senha</button>
+        
+        <div id="resultSenha" class="results-row">
+    
+        </div>
+    </section>
 
-    <h2>7 - Resultado no HTML</h2>
-    <button onclick="showSoma()">Aperte para somar</button>
+    <section>
+        <h2>7 - Resultado no HTML</h2>
+        <button onclick="showSoma()">Aperte para somar</button>
+    
+        <div id="resultSoma" class="results-column">
+    
+        </div>
+    </section>
 
-    <div id="resultSoma" class="results-column">
+    <section>
+        <h2>8 - Resultado no HTML</h2>
+        <input type="number" id="ex-8" placeholder="Digite um número">
+        <button type="submit" onclick="ehPar()">Enviar</button>
+    
+        <div id="resultPar" class="results-column">
+    
+        </div>
+    </section>
 
-    </div>
+    <section>
+        <h2>9 - Reultado no HTML</h2>
+        <input type="number" id="ex-9" placeholder="Digite um número">
+        <button type="submit" onclick="somaAteNum()">Enviar</button>
+    
+        <div id="resultSomaAteNum" class="results-row">
+    
+        </div>
+    </section>
 
-    <h2>8 - Resultado no HTML</h2>
-    <input type="number" id="ex-8" placeholder="Digite um número">
-    <button type="submit" onclick="ehPar()">Enviar</button>
-
-    <div id="resultPar" class="results-column">
-
-    </div>
-
-    <h2>9 - Reultado no HTML</h2>
-    <input type="number" id="ex-9" placeholder="Digite um número">
-    <button type="submit" onclick="somaAteNum()">Enviar</button>
-
-    <div id="resultSomaAteNum" class="results-row">
-
-    </div>
-
-    <h2>10 - Reultado no HTML</h2>
-    <input type="number" id="ex-10" placeholder="Digite um número">
-    <button type="submit" onclick="primo()">Enviar</button>
-
-    <div id="resultPrimo" class="results-row">
-
-    </div>
+    <section>
+        <h2>10 - Reultado no HTML</h2>
+        <input type="number" id="ex-10" placeholder="Digite um número">
+        <button type="submit" onclick="primo()">Enviar</button>
+    
+        <div id="resultPrimo" class="results-row">
+    
+        </div>
+    </section>
 
     <script type="module" src="script.js"></script>
 </body>
