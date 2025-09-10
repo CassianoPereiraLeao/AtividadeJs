@@ -46,12 +46,15 @@ window.maioridade = () => {
 }
 
 window.contagemProgressiva = async () => {
+    let button = document.getElementById("buttonContagemProgressiva");
+    button.disabled = true;
     let div = document.getElementById("contagemProgressiva");
-    clearDiv("contagemProgressiva");  
     for(let i = 1; i < 11; i++) {
         div.innerHTML += `<p>${i}</p>`;
         await sleep(500);
     }
+    button.disabled = false;
+    div.innerHTML += `<button onclick="clearDiv('#contagemProgressiva')" class="clear">Limpar</button>`;
 }
 
 window.tabuada = () => {

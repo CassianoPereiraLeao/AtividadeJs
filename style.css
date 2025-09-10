@@ -16,4 +16,6 @@ body {
 
 button.clear {
     width: 60px;
+    height: 30px;
+    align-self: center;
 }
